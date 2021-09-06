@@ -22,7 +22,7 @@ func NewECS() *ECS {
 	return &ECS{
 		objects: object.NewDB(),
 		assets:  object.Values{},
-		closure: dep.Closure{},
+		closure: dep.NewClosure(),
 	}
 }
 
